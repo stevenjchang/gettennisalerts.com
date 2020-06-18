@@ -11,11 +11,7 @@ const IndexPage = () => {
             logo
           </a>
           <div className="css-nav-right right-0 absolute">
-            <a href="" className="
-              border-b-2 border-solid border-transparent hover:border-green-600
-              hover:text-green-800
-              p-2
-            ">Features</a>
+            <a href="" className="custom-nav-links">Features</a>
             <a href="">Pricing</a>
             <a href="">Contact Us</a>
           </div>
