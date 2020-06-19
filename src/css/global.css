@@ -6,16 +6,16 @@
 
 a {
   text-decoration: none;
-  /* @apply text-orange-900 */
 }
 
 .css-shadow-div {
   top: 4rem;
-  /* box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); */
+  box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .custom-nav-links {
-  @apply .text-sm .border-b-2 .border-solid .border-transparent .px-2
+  @apply .text-sm .font-semibold text-gray-800
+         .border-b-2 .border-solid .border-transparent .px-2
   p-2;
 }
 .custom-nav-links:hover {
@@ -24,16 +24,20 @@ a {
 
 .custom-cta-button {
   border-radius: 0.7rem;
-  border: 3px solid #4fcc9b;
-  @apply mr-3;
+  border: 3px solid #24be98;
+  @apply .mr-3 .font-bold;
 }
 .custom-button-1 {
-  color: #4fcc9b;
+  color: #24be98;
 }
 .custom-button-1:hover {
+  background-color: #24be98;
+  color: #ffffff;
 }
 .custom-button-2 {
-  background-color: #4fcc9b;
+  /* background-color: #4fcc9b; */
+  background-color: #24be98;
 }
 .custom-button-2:hover {
+  @apply .bg-teal-700 .border-teal-700;
 }

@@ -40,10 +40,10 @@ const IndexPage = () => {
                 match
               </h3>
               <div className="mt-10">
-                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded">
-                  find out more
+                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2 px-4 hover:border-transparent">
+                  learn more
                 </button>
-                <button className="custom-cta-button custom-button-2 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded">
+                <button className="custom-cta-button custom-button-2 text-white py-2 px-4">
                   sign up now
                 </button>
               </div>
