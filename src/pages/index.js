@@ -1,6 +1,7 @@
 import React from "react"
 
 import Section2 from "../components/Section2"
+import Counter from "../components/Counter"
 
 import LogoImg from "../images/GTA.png"
 import HeroImg from "../images/undraw_grand_slam_0q5r 1.png"
@@ -32,7 +33,7 @@ const IndexPage = () => {
       <div className="main-container relative">
         <div className="cover h-1 absolute w-full bg-white"></div>
         <div className="container">
-          <section className="container custom-section-1 flex h-screen w-3/4">
+          <section className="container custom-section-1 flex w-3/4">
             <div className="custom-left w-1/2 flex flex-col justify-center items-start">
               <h1 className="text-5xl font-bold mb-8 mt-8">
                 Never miss another tennis match
@@ -43,10 +44,10 @@ const IndexPage = () => {
                 match.
               </h3>
               <div className="mt-10">
-                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-4 py-2 px-4 hover:border-transparent">
+                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-4 hover:border-transparent">
                   learn more
                 </button>
-                <button className="custom-cta-button custom-button-2 text-white py-2 px-4">
+                <button className="custom-cta-button custom-button-2 text-white">
                   sign up now
                 </button>
               </div>
@@ -56,6 +57,7 @@ const IndexPage = () => {
             </div>
           </section>
         </div>
+        <Counter />
         <Section2 />
       </div>
     </div>
