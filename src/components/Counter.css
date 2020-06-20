@@ -1,0 +1,3 @@
+.custom-counter-text-container {
+  @apply .flex .flex-col .items-center .text-white .text-5xl font-bold;
+}
