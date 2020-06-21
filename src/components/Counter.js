@@ -32,8 +32,8 @@ const CounterSection = ({ time }) => {
   const { weeks = 3, days = 187, hours = 23, minutes = 55, seconds = 13 } = time
   return (
     <>
-      <div className="bg-teal-600">
-        <section className="container flex justify-evenly p-10 px-40">
+      <div className="custom-counter-section">
+        <section className="container flex justify-evenly p-6 px-64">
           <div className="custom-counter-text-container">
             <p>{weeks}</p>
             <p className="text-sm">Weeks</p>

@@ -1,3 +1,6 @@
+.custom-counter-section {
+  background: #24be98;
+}
 .custom-counter-text-container {
   @apply .flex .flex-col .items-center .text-white .text-5xl font-bold;
 }

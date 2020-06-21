@@ -8,6 +8,21 @@ a {
   text-decoration: none;
 }
 
+/* hr {
+  border: 0;
+  height: 4px;
+  width: 1rem;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+} */
+hr {
+  border: 0;
+  height: 0;
+  width: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .custom-flex-center {
   display: flex;
   justify-content: center;
@@ -49,4 +64,8 @@ a {
 }
 .custom-button-2:hover {
   @apply .bg-teal-700 .border-teal-700;
+}
+
+.custom-text-gray {
+  color: #8d8d8d;
 }
