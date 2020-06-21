@@ -7,9 +7,9 @@ const tournamentTime = new Date("2020-12-25")
 const CounterState = () => {
   const [timeRemaining, setTimeTimeRemaining] = useState({})
 
-  useEffect(() => {
-    // setInterval(() => calcTime(new Date()), 1000)
-  }, [timeRemaining.seconds])
+  // useEffect(() => {
+  //   setInterval(() => calcTime(new Date()), 1000)
+  // }, [])
 
   function calcTime(now) {
     const time = tournamentTime - now
@@ -29,7 +29,13 @@ const CounterState = () => {
 }
 
 const CounterSection = ({ time }) => {
-  const { weeks = 3, days = 187, hours = 23, minutes = 55, seconds = 13 } = time
+  const {
+    weeks = 26,
+    days = 187,
+    hours = 23,
+    minutes = 55,
+    seconds = 13,
+  } = time
   return (
     <>
       <div className="custom-counter-section">
