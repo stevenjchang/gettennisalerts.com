@@ -1,7 +1,8 @@
 import React from "react"
 
-import Section2 from "../components/Section2"
 import Counter from "../components/Counter"
+import ExplanationSection from "../components/ExplanationSection"
+import Section2 from "../components/Section2"
 
 import LogoImg from "../images/logo.png"
 import HeroImg from "../images/undraw_grand_slam_0q5r 1.png"
@@ -59,6 +60,7 @@ const IndexPage = () => {
           </section>
         </div>
         <Counter />
+        <ExplanationSection />
         <Section2 />
       </div>
     </div>
