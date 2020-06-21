@@ -3,7 +3,7 @@ import React from "react"
 import Section2 from "../components/Section2"
 import Counter from "../components/Counter"
 
-import LogoImg from "../images/GTA.png"
+import LogoImg from "../images/logo.png"
 import HeroImg from "../images/undraw_grand_slam_0q5r 1.png"
 
 // import { FaBeer } from "react-icons/fa"
@@ -13,8 +13,9 @@ const IndexPage = () => {
     <div className="font-sans">
       <nav className="h-16 sticky top-0 z-10 bg-white flex items-center">
         <div className="container flex justify-between items-center bg-gray-10 w-5/6 lg:w-3/4">
-          <a href="" className="">
-            <img src={LogoImg} alt="" className="mb-0" />
+          <a href="" className="flex items-center text-green-800 font-semibold">
+            <img src={LogoImg} alt="" className="mb-0 mr-2 h-12" />
+            <span>get tennis alerts</span>
           </a>
           <div className="css-nav-right">
             <a href="" className="custom-nav-links">
