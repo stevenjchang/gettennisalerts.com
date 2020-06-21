@@ -9,7 +9,13 @@ const EmailSignUp = () => {
             something something something something something something
           </div>
           <div className="input-container custom-flex-center">
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 type="email"
                 name="email"
