@@ -4,11 +4,11 @@
 
 @tailwind utilities;
 
-a {
-  text-decoration: none;
-}
 html {
   overflow-x: hidden;
+}
+a {
+  text-decoration: none;
 }
 
 /* hr {
@@ -71,4 +71,10 @@ hr {
 
 .custom-text-gray {
   color: #8d8d8d;
+}
+
+/* HEADER */
+.custom-hamburger-menu {
+  top: 4rem;
+  right: 0rem;
 }

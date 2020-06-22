@@ -1,37 +1,18 @@
 import React from "react"
 
+import Header from "../components/Header"
 import Counter from "../components/Counter"
 import ExplanationSection from "../components/ExplanationSection"
 import EmailSignUp from "../components/EmailSignUp"
 
-import LogoImg from "../images/logo.png"
 import HeroImg from "../images/undraw_grand_slam_0q5r 1.png"
-
-import { FiMenu } from "react-icons/fi"
 
 const IndexPage = () => {
   return (
     <div className="font-sans">
-      <nav className="h-16 sticky top-0 z-10 bg-white flex items-center">
-        <div className="container flex justify-between items-center bg-gray-10 w-5/6 lg:w-3/4">
-          <a href="" className="flex items-center text-green-800 font-semibold">
-            <img src={LogoImg} alt="" className="mb-0 mr-2 h-12" />
-            <span>get tennis alerts</span>
-          </a>
-          <div className="css-nav-right">
-            <a href="" className="custom-nav-links">
-              Features
-            </a>
-            <a href="" className="custom-nav-links">
-              Pricing
-            </a>
-            <a href="" className="custom-nav-links">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Header />
       <div className="css-shadow-div sticky w-full"></div>
+
       <div className="main-container relative">
         <div className="cover h-1 absolute w-full bg-white"></div>
         <div className="container">
@@ -59,7 +40,7 @@ const IndexPage = () => {
             </div>
           </section>
         </div>
-        <Counter />
+        {/* <Counter /> */}
         <ExplanationSection />
         <EmailSignUp />
       </div>
