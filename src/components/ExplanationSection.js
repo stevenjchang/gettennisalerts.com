@@ -24,26 +24,24 @@ const para = [
   "Currently in beta, there are more features to come. Sign up to be notified of new features, or take our survey",
 ]
 
+const calcClassname = index => {
+  return classnames(
+    "flex my-3 flex-col justify-around",
+    {
+      "lg:flex-row": index % 2 === 0,
+    },
+    { "lg:flex-row-reverse": index % 2 !== 0 }
+  )
+}
+
 const ExplanationSection = () => {
   return (
     <>
       <div className="bg">
         <div className="container flex flex-col my-20 w-9/12">
           {imgArray.map((img, idx) => {
-            let cn = classnames(
-              "flex my-3 flex-col justify-around",
-              {
-                "lg:flex-row": idx % 2 === 0,
-              },
-              { "lg:flex-row-reverse": idx % 2 !== 0 }
-            )
-            // let str = "flex my-3 flex-col justify-around"
-            // let cn2 =
-            //   idx % 2 === 0
-            //     ? str + " lg:flex-row "
-            //     : str + " lg:flex-row-reverse"
             return (
-              <div className={cn}>
+              <div className={calcClassname(idx)}>
                 <div className="w-full lg:w-2/5 custom-flex-center flex-row">
                   <img src={img} alt="select player" className="" />
                 </div>
