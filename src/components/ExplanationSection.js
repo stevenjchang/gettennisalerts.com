@@ -1,4 +1,6 @@
 import React from "react"
+import classnames from "classnames"
+
 import Img1 from "../images/image_choose.png"
 import Img2 from "../images/undraw_email_campaign_qa8y.png"
 import Img3 from "../images/undraw_mail_2_tqip.png"
@@ -28,16 +30,24 @@ const ExplanationSection = () => {
       <div className="bg">
         <div className="container flex flex-col my-20 w-9/12">
           {imgArray.map((img, idx) => {
-            let cn =
-              idx % 2 === 0
-                ? "flex my-3 justify-around"
-                : "flex my-3 justify-around flex-row-reverse"
+            let cn = classnames(
+              "flex my-3 flex-col justify-around",
+              {
+                "lg:flex-row": idx % 2 === 0,
+              },
+              { "lg:flex-row-reverse": idx % 2 !== 0 }
+            )
+            // let str = "flex my-3 flex-col justify-around"
+            // let cn2 =
+            //   idx % 2 === 0
+            //     ? str + " lg:flex-row "
+            //     : str + " lg:flex-row-reverse"
             return (
               <div className={cn}>
-                <div className="w-2/5 custom-flex-center flex-row">
+                <div className="w-full lg:w-2/5 custom-flex-center flex-row">
                   <img src={img} alt="select player" className="" />
                 </div>
-                <div className="w-1/2 flex justify-center flex-col items-center">
+                <div className="w-full lg:w-1/2 flex justify-center flex-col items-center">
                   <h1 className="font-bold uppercase">{heading[idx]}</h1>
                   <hr className="mt-5 mb-5" />
                   {para[idx] ? (

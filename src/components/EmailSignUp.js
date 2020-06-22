@@ -20,7 +20,7 @@ const EmailSignUp = () => {
                 type="email"
                 name="email"
                 size="30"
-                className="h-8 rounded-lg"
+                className="h-8 rounded-lg text-black"
               />
               <button
                 type="submit"
