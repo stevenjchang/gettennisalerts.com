@@ -6,7 +6,7 @@ import { GrClose } from "react-icons/gr"
 
 import LogoImg from "../images/logo_tennis_terry.png"
 
-const HamburgerMenuDropdown = ({ isOpen }) => (
+const HamburgerMenuDropdown = ({ isOpen, setIsOpen }) => (
   <div
     className={classnames(
       "absolute custom-hamburger-menu w-2/3 bg-gray-100 mx-8 flex flex-col ",
@@ -14,15 +14,23 @@ const HamburgerMenuDropdown = ({ isOpen }) => (
       { hidden: !isOpen }
     )}
   >
-    <a href="1" className="block text-black hover:bg-green-200 p-4 rounded">
+    <a
+      href="#features_section"
+      className="block text-black hover:bg-green-200 p-4 rounded"
+      onClick={() => setIsOpen(false)}
+    >
       Features
     </a>
-    <a href="1" className="block text-black hover:bg-green-200 p-4 rounded">
-      Pricing
+    <a
+      href="#signup_section"
+      className="block text-black hover:bg-green-200 p-4 rounded"
+      onClick={() => setIsOpen(false)}
+    >
+      Sign Up
     </a>
-    <a href="1" className="block text-black hover:bg-green-200 p-4 rounded">
+    {/* <a href="" className="block text-black hover:bg-green-200 p-4 rounded">
       Contact Us
-    </a>
+    </a> */}
   </div>
 )
 
@@ -31,7 +39,7 @@ const Header = ({ siteTitle }) => {
   return (
     <>
       <header className="h-16 sticky top-0 z-10 bg-white flex items-center">
-        <div className="container flex justify-between items-center bg-gray-10 w-5/6 lg:w-3/4">
+        <div className="container flex justify-between items-center bg-gray-10 w-11/12 lg:w-3/4">
           <a href="" className="flex items-center text-green-800 font-semibold">
             <img src={LogoImg} alt="" className="mb-0 h-20" />
             <p>get tennis alerts</p>
@@ -54,7 +62,7 @@ const Header = ({ siteTitle }) => {
             </button>
           </div>
         </div>
-        <HamburgerMenuDropdown isOpen={isOpen} />
+        <HamburgerMenuDropdown isOpen={isOpen} setIsOpen={setIsOpen} />
       </header>
     </>
   )
