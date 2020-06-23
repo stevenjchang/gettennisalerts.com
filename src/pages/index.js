@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from "../components/Header"
+import CustomHeader from "../components/CustomHeader"
 import Counter from "../components/Counter"
 import ExplanationSection from "../components/ExplanationSection"
 import EmailSignUp from "../components/EmailSignUp"
@@ -10,7 +10,7 @@ import HeroImg from "../images/undraw_grand_slam_0q5r 1.png"
 const IndexPage = () => {
   return (
     <div className="font-sans">
-      <Header />
+      <CustomHeader />
       <div className="css-shadow-div sticky w-full"></div>
 
       <div className="main-container relative">
