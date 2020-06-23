@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => {
             <p>get tennis alerts</p>
           </a>
           <div className="css-nav-right hidden lg:inline-block">
-            <a href="" className="custom-nav-links">
+            <a href="#features_section" className="custom-nav-links">
               Features
             </a>
             <a href="" className="custom-nav-links">

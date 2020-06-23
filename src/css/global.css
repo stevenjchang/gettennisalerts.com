@@ -11,13 +11,15 @@ a {
   text-decoration: none;
 }
 
-/* hr {
-  border: 0;
-  height: 4px;
-  width: 1rem;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-} */
+/* CSS Trick for anchor link covered by navbar */
+/* https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+}
+
 hr {
   border: 0;
   height: 0;
