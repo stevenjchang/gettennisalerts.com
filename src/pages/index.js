@@ -22,7 +22,7 @@ const IndexPage = () => {
                 Never miss another tennis match
               </h1>
               <h3 className="text-gray-600 tracking-wide w-full lg:w-5/6 text-center lg:text-left">
-                Follow your favorite tennis stars and be notified before each
+                Follow your favorite tennis stars and get alerts before each
                 match starts. We will email you 1 day and 1 hour before each
                 match.
               </h3>

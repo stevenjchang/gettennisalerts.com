@@ -4,7 +4,7 @@ import classnames from "classnames"
 import { FiMenu } from "react-icons/fi"
 import { GrClose } from "react-icons/gr"
 
-import LogoImg from "../images/logo.png"
+import LogoImg from "../images/logo_tennis_terry.png"
 
 const HamburgerMenuDropdown = ({ isOpen }) => (
   <div
@@ -33,8 +33,8 @@ const Header = ({ siteTitle }) => {
       <header className="h-16 sticky top-0 z-10 bg-white flex items-center">
         <div className="container flex justify-between items-center bg-gray-10 w-5/6 lg:w-3/4">
           <a href="" className="flex items-center text-green-800 font-semibold">
-            <img src={LogoImg} alt="" className="mb-0 mr-2 h-12" />
-            <span>get tennis alerts</span>
+            <img src={LogoImg} alt="" className="mb-0 h-20" />
+            <p>get tennis alerts</p>
           </a>
           <div className="css-nav-right hidden lg:inline-block">
             <a href="" className="custom-nav-links">
