@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <header className="relative h-16 sticky top-0 z-10 bg-white flex items-center">
+      <header className="h-16 sticky top-0 z-10 bg-white flex items-center">
         <div className="container flex justify-between items-center bg-gray-10 w-5/6 lg:w-3/4">
           <a href="" className="flex items-center text-green-800 font-semibold">
             <img src={LogoImg} alt="" className="mb-0 mr-2 h-12" />
