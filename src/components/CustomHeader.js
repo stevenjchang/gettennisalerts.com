@@ -40,12 +40,12 @@ const Header = ({ siteTitle }) => {
             <a href="#features_section" className="custom-nav-links">
               Features
             </a>
-            <a href="" className="custom-nav-links">
-              Pricing
+            <a href="#signup_section" className="custom-nav-links">
+              Sign Up
             </a>
-            <a href="" className="custom-nav-links">
+            {/* <a href="" className="custom-nav-links">
               Contact Us
-            </a>
+            </a> */}
           </div>
           <div className="css-nav-right inline-block lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>

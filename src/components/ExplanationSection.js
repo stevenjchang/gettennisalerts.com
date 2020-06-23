@@ -37,7 +37,8 @@ const calcClassname = index => {
 const ExplanationSection = () => {
   return (
     <>
-      <div className="bg" id="features_section">
+      <span id="features_section"></span>
+      <div className="bg">
         <div className="container flex flex-col my-20 w-9/12">
           {imgArray.map((img, idx) => {
             return (
