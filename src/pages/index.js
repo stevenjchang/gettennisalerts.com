@@ -27,7 +27,7 @@ const IndexPage = () => {
                 match.
               </h3>
               <div className="mt-10 mb-12">
-                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-4 hover:border-transparent">
+                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-2 md:mr-4 hover:border-transparent">
                   learn more
                 </button>
                 <button className="custom-cta-button custom-button-2 text-white">
