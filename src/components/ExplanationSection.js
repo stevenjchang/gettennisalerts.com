@@ -41,7 +41,7 @@ const ExplanationSection = () => {
         <div className="container flex flex-col my-20 w-9/12">
           {imgArray.map((img, idx) => {
             return (
-              <div className={calcClassname(idx)}>
+              <div key={idx} className={calcClassname(idx)}>
                 <div className="w-full lg:w-2/5 custom-flex-center flex-row">
                   <img src={img} alt="select player" className="" />
                 </div>

@@ -5,8 +5,9 @@ const EmailSignUp = () => {
     <div className="custom-background-color bg-gray-400">
       <section className="container text-center text-white h-48 custom-flex-center">
         <div className="form-container custom-flex-center flex-col py-8 rounded-md">
-          <div className="mb-6 text-gray-800">
-            something something something something something something
+          <div className="mb-6 text-gray-800 font-semibold">
+            This project is working and currently in beta. Sign up to be invited
+            as a beta user.
           </div>
           <div className="input-container custom-flex-center">
             <form
@@ -20,13 +21,14 @@ const EmailSignUp = () => {
                 type="email"
                 name="email"
                 size="30"
-                className="h-8 rounded-lg text-black"
+                className="h-10 rounded-lg text-black"
               />
               <button
                 type="submit"
-                className="bg-indigo-700 px-4 py-1 ml-4 rounded-lg"
+                // className="bg-indigo-700 px-4 py-1 ml-4 rounded-lg font-bold"
+                className="custom-cta-button custom-button-3 bg-indigo-700 ml-3"
               >
-                Submit
+                sign up now
               </button>
             </form>
           </div>

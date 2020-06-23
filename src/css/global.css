@@ -54,6 +54,7 @@ hr {
   border: 3px solid #24be98;
   @apply .font-bold .py-2 px-5 shadow-lg;
 }
+
 .custom-button-1 {
   color: #24be98;
 }
@@ -67,6 +68,12 @@ hr {
 }
 .custom-button-2:hover {
   @apply .bg-teal-700 .border-teal-700;
+}
+.custom-button-3 {
+  border: 1px solid #4c51ba;
+}
+.custom-button-3:hover {
+  background: #282eaf;
 }
 
 .custom-text-gray {
