@@ -17,9 +17,8 @@ const heading = [
   "And More",
 ]
 const para = [
-  "",
-  "",
-  "",
+  "Choose to follow certain players and get customized alerts. Declutter what you want to see.",
+  "Receive a daily summary during tournament time of the upcoming matches of your favorite players. You will also receive an alert 1 hour before each match",
   "Enjoy a clean and simplified view, only browse through the score of the players you follow. This feature is in beta.",
   "Currently in beta, there are more features to come. Sign up to be notified of new features, or take our survey",
 ]
@@ -49,18 +48,9 @@ const ExplanationSection = () => {
                 <div className="w-full lg:w-1/2 flex justify-center flex-col items-center">
                   <h1 className="font-bold uppercase">{heading[idx]}</h1>
                   <hr className="mt-5 mb-5" />
-                  {para[idx] ? (
-                    <p className="custom-text-gray ">{para[idx]}</p>
-                  ) : (
-                    <p className="custom-text-gray ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Cras tincidunt orci ut suscipit pretium. Class aptent
-                      taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Cras tincidunt orci ut
-                      suscipit pretium
-                    </p>
-                  )}
+                  <p className="custom-text-gray text-center lg:text-left">
+                    {para[idx]}
+                  </p>
                 </div>
               </div>
             )
