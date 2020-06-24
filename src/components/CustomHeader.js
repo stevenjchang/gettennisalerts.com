@@ -39,12 +39,12 @@ const Header = ({ siteTitle }) => {
   return (
     <>
       <header className="h-16 sticky top-0 z-10 bg-white flex items-center">
-        <div className="container flex justify-between items-center bg-gray-10 w-11/12 lg:w-3/4">
+        <div className="container flex justify-between items-center bg-gray-10 w-11/12 lg:w-3/4 bg-gray-500">
           <a href="" className="flex items-center text-green-800 font-semibold">
             <img src={LogoImg} alt="" className="mb-0 h-20" />
             <p>get tennis alerts</p>
           </a>
-          <div className="css-nav-right hidden lg:inline-block">
+          <div className="css-nav-right hidden lg:inline-block bg-green-700">
             <a href="#features_section" className="custom-nav-links">
               Features
             </a>
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => {
               Contact Us
             </a> */}
           </div>
-          <div className="css-nav-right inline-block lg:hidden">
+          <div className="css-nav-right inline-block lg:hidden bg-red-400">
             <button onClick={() => setIsOpen(!isOpen)}>
               {!isOpen && <FiMenu size="1.7em" color="#9c9999" />}
               {isOpen && <GrClose size="1.7em" color="#9c9999" />}
