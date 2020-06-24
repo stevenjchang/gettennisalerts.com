@@ -16,12 +16,16 @@ const Hero = () => {
               starts. We will email you 1 day and 1 hour before each match.
             </h3>
             <div className="mt-10 mb-12 flex justify-center lg:justify-start w-full">
-              <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-2 md:mr-4 hover:border-transparent">
-                learn more
-              </button>
-              <button className="custom-cta-button custom-button-2 text-white">
-                sign up now
-              </button>
+              <a href="#features_section">
+                <button className="custom-cta-button custom-button-1 bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white mr-2 md:mr-4 hover:border-transparent">
+                  learn more
+                </button>
+              </a>
+              <a href="#signup_section">
+                <button className="custom-cta-button custom-button-2 text-white">
+                  sign up now
+                </button>
+              </a>
             </div>
           </div>
           <div className="custom-right lg:w-1/2 flex justify-center items-center mx-auto">
