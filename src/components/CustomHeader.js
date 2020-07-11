@@ -4,7 +4,7 @@ import classnames from "classnames"
 import { FiMenu } from "react-icons/fi"
 import { GrClose } from "react-icons/gr"
 
-import LogoImg from "../images/logo_tennis_terry.png"
+import LogoImg from "../images/logo_tennis_terry.svg"
 
 const HamburgerMenuDropdown = ({ isOpen, setIsOpen }) => (
   <div
