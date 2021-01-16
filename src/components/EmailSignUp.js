@@ -23,7 +23,8 @@ const EmailSignUp = () => {
                   type="email"
                   name="email"
                   size="30"
-                  disable
+                  disabled
+                  placeholder="currently closed"
                   className="h-10 rounded-lg text-black mb-4 w-full lg:w-auto mr-0 lg:mr-3"
                 />
                 <button
