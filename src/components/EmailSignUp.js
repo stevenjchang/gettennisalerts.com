@@ -8,8 +8,8 @@ const EmailSignUp = () => {
         <section className="container text-center text-white h-48 custom-flex-center">
           <div className="form-container custom-flex-center flex-col rounded-md">
             <div className="mb-6 text-gray-800 font-semibold">
-              This project is working and currently in beta. Sign up to be
-              invited as a beta user.
+              Sorry, this project is in beta testing, and is currently closed
+              for new users.
             </div>
             <div className="input-container custom-flex-center px-8">
               <form
@@ -23,6 +23,7 @@ const EmailSignUp = () => {
                   type="email"
                   name="email"
                   size="30"
+                  disable
                   className="h-10 rounded-lg text-black mb-4 w-full lg:w-auto mr-0 lg:mr-3"
                 />
                 <button
